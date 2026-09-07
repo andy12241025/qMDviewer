@@ -1,0 +1,12 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/icons">
+        <file>qmdviewer-16.png</file>
+        <file>qmdviewer-24.png</file>
+        <file>qmdviewer-32.png</file>
+        <file>qmdviewer-48.png</file>
+        <file>qmdviewer-64.png</file>
+        <file>qmdviewer-128.png</file>
+        <file>qmdviewer-256.png</file>
+    </qresource>
+</RCC>

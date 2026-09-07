@@ -1,0 +1,8 @@
+build/
+build-*/
+cmake-build-*/
+*.user
+*.autosave
+.DS_Store
+CMakeLists.txt.user
+dist/
