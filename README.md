@@ -12,6 +12,20 @@ either Qt 5.14+ or Qt 6.
 More: [dark theme](docs/screenshot-dark.png) ·
 [editor with vim mode](docs/screenshot-editor.png)
 
+## Install
+
+Ready-made packages are on the
+[1.0.0 release](https://github.com/andy12241025/qMDviewer/releases/tag/1.0.0):
+
+- **Windows 10/11 (64-bit)**:
+  [`qMDviewer-1.0.0-windows-x64.zip`](https://github.com/andy12241025/qMDviewer/releases/download/1.0.0/qMDviewer-1.0.0-windows-x64.zip)
+  - unzip anywhere and run `qmdviewer.exe`; the Qt libraries are included.
+- **Debian/Ubuntu (64-bit)**:
+  [`qmdviewer_1.0.0_amd64.deb`](https://github.com/andy12241025/qMDviewer/releases/download/1.0.0/qmdviewer_1.0.0_amd64.deb)
+  - `sudo apt install ./qmdviewer_1.0.0_amd64.deb`
+
+Or build it yourself, which takes a few seconds; see [Building](#building).
+
 ## Features
 
 - **Live reload.** The open file is watched on disk and re-rendered when it
@@ -68,6 +82,12 @@ PrintSupport is optional and only needed for printing).
 ```sh
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
+```
+
+To build a Debian package instead of installing into the system:
+
+```sh
+cmake --build build -j && (cd build && cpack -G DEB)
 ```
 
 The result is `build/qmdviewer` (`qmdviewer.exe` on Windows, `qmdviewer.app` on
