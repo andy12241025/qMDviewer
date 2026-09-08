@@ -7,9 +7,9 @@ whole program is one small binary that links against nothing but Qt Widgets —
 no web engine, no Markdown library, no bundled JavaScript. It builds against
 either Qt 5.14+ or Qt 6.
 
-![syntax colouring in the light theme](docs/screenshot-light.png)
+![qMDviewer on Windows 11, dark theme](docs/screenshot.png)
 
-More: [dark theme](docs/screenshot-dark.png) ·
+More: [syntax colouring](docs/screenshot-light.png) ·
 [editor with vim mode](docs/screenshot-editor.png)
 
 ## Install
